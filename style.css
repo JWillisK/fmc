@@ -1,159 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-	background-color: #eee;
-	font-family: Arial, sans-serif;
-	text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #FFF9C4; /* Light pink */
 }
 
-.wrapper {
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 50px 20px;
-	background-color: #fff;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+.header {
+    background-color: #FFF9C4; /* Light pink */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-h1 {
-	font-size: 48px;
-	color: #ff0080;
-	margin-bottom: 20px;
+
+.title-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.cake {
-	width: 120px;
-	height: 120px;
-	margin: 0 auto;
-	position: relative;
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.plate {
-	width: 100px;
-	height: 20px;
-	background-color: #b87333;
-	border-radius: 10px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
+.icons {
+    display: flex;
+    gap: 10px;
 }
 
-.layer {
-	width: 100px;
-	height: 20px;
-	background-color: #fff;
-	border-radius: 10px;
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 1px solid #fac82b; /* Tan/yellow */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.layer-bottom {
-	background-color: #ff8c00;
+.icon:hover {
+    background-color: #999;
+    border: 1px solid #666;
+    cursor: pointer;
 }
 
-.layer-middle {
-	background-color: #f0e68c;
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
-.layer-top {
-	background-color: #ffd700;
+.menu-item {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #58d5f5; /* Bubblegum blue */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
 }
 
-.icing {
-	width: 80px;
-	height: 80px;
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	bottom: 40px;
-	left: 50%;
-	transform: translateX(-50%);
-	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+.menu-item:hover {
+    border: 1px solid #666;
+    cursor: pointer;
 }
 
-.candle {
-	width: 10px;
-	height: 80px;
-	background-color: #ff0080;
-	border-radius: 5px;
-	position: absolute;
-	bottom: 120px;
-	left: 50%;
-	transform: translateX(-50%);
+
+
+
+.footer {
+    background-color: #FFF9C4; /* Updated color to yellow */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.flame {
-	width: 20px;
-	height: 20px;
-	background-color: #ff8c00;
-	border-radius: 50%;
-	position: absolute;
-	top: -10px;
-	left: 50%;
-	transform: translateX(-50%);
-	animation: flicker 1s infinite;
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes flicker {
-	0% {
-		opacity: 0.5;
-		transform: translateY(-5px);
-	}
-	50% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-	100% {
-		opacity: 0.5;
-		transform: translateY(-5px);
-	}
+.footer-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-.message {
-	margin-top: 50px;
+.footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.fireworks {
-	position: relative;
-	margin-top: 50px;
+.social-media-links {
+    text-align: center;
 }
 
-.firework {
-	width: 10px;
-	height: 10px;
-	background-color: #ff0080;
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	animation: fireworks 1s infinite;
+.social-media-links a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
 }
 
-.firework:nth-child(1) {
-	animation-delay: 0.1s;
+.social-media-links a:hover {
+    text-decoration: underline;
 }
 
-.firework:nth-child(2) {
-	animation-delay: 0.2s;
+.footer-heading a {
+    text-decoration: none;
+    color: #000;
 }
 
-.firework:nth-child(3) {
-	animation-delay: 0.3s;
-}
-
-.firework:nth-child(4) {
-	animation-delay: 0.4s;
-}
-
-.firework:nth-child(5) {
-	animation-delay: 0.5s;
-}
-
-.firework:nth-child(6) {
-	animation-delay: 0.6s;
-}
-
-.firework:nth-child(7) {
-	animation-delay: 0.7s;
+.footer-heading a:hover {
+    text-decoration: underline;
 }

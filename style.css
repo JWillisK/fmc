@@ -200,3 +200,25 @@ body {
   display: block;
   margin-top: 20px;
 }
+
+/* Add the media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .title-icons-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        gap: 5px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+}

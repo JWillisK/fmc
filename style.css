@@ -1,131 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FFF9C4; /* Light pink */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.header {
-    background-color: #FFF9C4; /* Light pink */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-
-.title-icons-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.slide img {
+  width: 100%;
 }
 
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icons {
-    display: flex;
-    gap: 10px;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-    background-color: #ccc;
-    border: 1px solid #fac82b; /* Tan/yellow */
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon:hover {
-    background-color: #999;
-    border: 1px solid #666;
-    cursor: pointer;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-.menu-item {
-    text-decoration: none;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #58d5f5; /* Bubblegum blue */
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin: 0 5px;
-}
-
-.menu-item:hover {
-    border: 1px solid #666;
-    cursor: pointer;
-}
-
-
-
-
-.footer {
-    background-color: #FCF9C4; /* Updated color to yellow */
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-image {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.footer-heading {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.social-media-links {
-    text-align: center;
-}
-
-.social-media-links a {
-    text-decoration: none;
-    color: #000;
-    margin: 0 5px;
-}
-
-.social-media-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-heading a {
-    text-decoration: none;
-    color: #000;
-}
-
-.footer-heading a:hover {
-    text-decoration: underline;
+.slide.active {
+  opacity: 1;
 }

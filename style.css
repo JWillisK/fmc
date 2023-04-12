@@ -158,3 +158,45 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cupcake-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #58d5f5; /* Bubblegum blue */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cupcake-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cupcake-item h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cupcake-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cupcake-item span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #58d5f5; /* Bubblegum blue */
+  display: block;
+  margin-top: 20px;
+}

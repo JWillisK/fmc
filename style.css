@@ -196,3 +196,61 @@ body {
         height: 25px;
     }
 }
+
+/* Add these media queries at the end of your CSS */
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+  .horizontal-menu {
+    display: none;
+  }
+
+  .icons {
+    display: flex;
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  .horizontal-menu {
+    display: flex;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Adjust this value if needed */
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #58d5f5; /* Bubblegum blue */
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #58d5f5; /* Bubblegum blue */
+  color: #fff;
+}
+

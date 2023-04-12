@@ -31,3 +31,36 @@ function startSlideshow() {
 
 // Start the slideshow on page load
 window.addEventListener("load", startSlideshow);
+
+// Select the 'icon' element
+const menuIcon = document.querySelector(".icon");
+
+// Create the dropdown menu element
+const dropdownMenu = document.createElement("div");
+dropdownMenu.className = "dropdown-menu";
+
+// Add the menu items to the dropdown menu
+const menuItems = [
+  { text: "HOME", href: "index.html" },
+  { text: "ABOUT US", href: "about.html" },
+  { text: "MENU", href: "menu.html" },
+  { text: "ONLINE ORDERING", href: "online-ordering.html" },
+  { text: "WORKSHOP", href: "workshop.html" },
+  { text: "CONTACT US", href: "contact.html" },
+];
+
+menuItems.forEach((item) => {
+  const menuItem = document.createElement("a");
+  menuItem.href = item.href;
+  menuItem.textContent = item.text;
+  dropdownMenu.appendChild(menuItem);
+});
+
+// Add the dropdown menu to the page
+document.body.appendChild(dropdownMenu);
+
+// Toggle the dropdown menu visibility when the 'icon' is clicked
+menuIcon.addEventListener("click", () => {
+  dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
+});
+

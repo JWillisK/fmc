@@ -17,37 +17,6 @@ body {
     padding: 20px;
 }
 
-
-.title-icons-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icons {
-    display: flex;
-    gap: 10px;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-    background-color: #ccc;
-    border: 1px solid #fac82b; /* Tan/yellow */
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .icon:hover {
     background-color: #999;
     border: 1px solid #666;

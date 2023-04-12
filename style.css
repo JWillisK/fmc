@@ -153,3 +153,18 @@ body {
 .slide.active {
   opacity: 1;
 }
+
+/* Add this CSS to center the images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Modify this selector to add max-width and height: auto; properties */
+.slide img {
+    max-width: 100%;
+    height: auto;
+}

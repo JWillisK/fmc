@@ -49,6 +49,7 @@ const menuItems = [
   { text: "CONTACT US", href: "contact.html" },
 ];
 
+
 menuItems.forEach((item) => {
   const menuItem = document.createElement("a");
   menuItem.href = item.href;
@@ -64,3 +65,7 @@ menuIcon.addEventListener("click", () => {
   dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
 });
 
+document.getElementById("menu-icon").addEventListener("click", function () {
+    var dropdownMenu = document.querySelector(".dropdown-menu");
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+});

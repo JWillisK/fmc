@@ -203,9 +203,6 @@ body {
 
 
 
-
-/* ... (Previous styles) ... */
-
 /* Styles for mobile screens */
 @media (max-width: 767px) {
   .horizontal-menu {
@@ -214,6 +211,16 @@ body {
 
   .icons {
     display: flex;
+  }
+  
+  .title-icons-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 }
 
@@ -224,15 +231,11 @@ body {
   }
 }
 
-
-/* ... (Previous styles) ... */
-
 /* Update the dropdown-menu styles */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 60px; /* Adjust this value if needed */
-  right: 20px;
   background-color: #fff;
   border: 1px solid #58d5f5; /* Bubblegum blue */
   border-radius: 5px;
@@ -248,7 +251,7 @@ body {
 
 .dropdown-menu-item {
   display: block;
-  text-align: left;
+  text-align: center;
   padding: 15px 20px; /* Increase padding for larger font size */
   border-bottom: 1px solid #58d5f5; /* Bubblegum blue */
   cursor: pointer;

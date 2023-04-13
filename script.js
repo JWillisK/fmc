@@ -49,11 +49,11 @@ const menuItems = [
   { text: "CONTACT US", href: "contact.html" },
 ];
 
-
 menuItems.forEach((item) => {
   const menuItem = document.createElement("a");
   menuItem.href = item.href;
   menuItem.textContent = item.text;
+  menuItem.className = "dropdown-menu-item"; // Add the class name for the menu items
   dropdownMenu.appendChild(menuItem);
 });
 
@@ -69,3 +69,5 @@ document.getElementById("menu-icon").addEventListener("click", function () {
     var dropdownMenu = document.querySelector(".dropdown-menu");
     dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
 });
+
+dropdownMenu.style.display = "none";

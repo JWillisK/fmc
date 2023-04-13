@@ -32,9 +32,6 @@ function startSlideshow() {
 // Start the slideshow on page load
 window.addEventListener("load", startSlideshow);
 
-// Select the 'icon' element
-const menuIcon = document.querySelector(".icon");
-
 // Create the dropdown menu element
 const dropdownMenu = document.createElement("div");
 dropdownMenu.className = "dropdown-menu";
@@ -53,21 +50,20 @@ menuItems.forEach((item) => {
   const menuItem = document.createElement("a");
   menuItem.href = item.href;
   menuItem.textContent = item.text;
-  menuItem.className = "dropdown-menu-item"; // Add the class name for the menu items
+  menuItem.className = "dropdown-menu-item";
   dropdownMenu.appendChild(menuItem);
 });
 
 // Add the dropdown menu to the page
 document.body.appendChild(dropdownMenu);
 
+// Set the initial display property of the dropdown menu to 'none'
+dropdownMenu.style.display = "none";
+
+// Select the 'icon' element
+const menuIcon = document.querySelector(".icon");
+
 // Toggle the dropdown menu visibility when the 'icon' is clicked
 menuIcon.addEventListener("click", () => {
   dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
 });
-
-document.getElementById("menu-icon").addEventListener("click", function () {
-    var dropdownMenu = document.querySelector(".dropdown-menu");
-    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-});
-
-dropdownMenu.style.display = "none";

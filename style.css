@@ -198,7 +198,8 @@ body {
 
   .icon {
       position: absolute;
-      right: 20px;
+      right: 0;
+      padding-right: 10px;
       cursor: pointer;
   }
 
@@ -235,7 +236,8 @@ body {
 
   .icon {
       position: absolute;
-      right: 20px;
+      right: 0;
+      padding-right: 10px;
       cursor: pointer;
   }
 

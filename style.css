@@ -224,6 +224,9 @@ body {
   }
 }
 
+
+/* ... (Previous styles) ... */
+
 /* Update the dropdown-menu styles */
 .dropdown-menu {
   display: none;
@@ -234,17 +237,22 @@ body {
   border: 1px solid #58d5f5; /* Bubblegum blue */
   border-radius: 5px;
   z-index: 1000;
-  width: 200px; /* Set a fixed width for the dropdown menu */
-  max-height: 300px; /* Set a fixed height for the dropdown menu */
+  width: 80%; /* Set the width to 80% of the screen */
+  max-height: 75vh; /* Set the height to 75% of the viewport height */
   overflow-y: auto; /* Make the menu scrollable */
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dropdown-menu-item {
   display: block;
   text-align: left;
-  padding: 10px 15px;
+  padding: 15px 20px; /* Increase padding for larger font size */
   border-bottom: 1px solid #58d5f5; /* Bubblegum blue */
   cursor: pointer;
+  font-size: 18px; /* Increase font size */
 }
 
 .dropdown-menu-item:last-child {

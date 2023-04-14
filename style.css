@@ -227,14 +227,14 @@ margin-top: 20px;
 .dropdown-menu {
 display: none;
 position: absolute;
-top: 60px; / Adjust this value if needed /
+top: 60px; /* Adjust this value if needed */
 background-color: #fff;
-border: 1px solid #58d5f5; / Bubblegum blue /
+border: 1px solid #58d5f5; /* Bubblegum blue */
 border-radius: 5px;
 z-index: 1000;
-width: 80%; / Set the width to 80% of the screen /
-max-height: 75vh; / Set the height to 75% of the viewport height /
-overflow-y: auto; / Make the menu scrollable */
+width: 80%; /* Set the width to 80% of the screen */
+max-height: 75vh; /* Set the height to 75% of the viewport height */
+overflow-y: auto; /* Make the menu scrollable */
 margin-left: auto;
 margin-right: auto;
 left: 50%;

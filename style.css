@@ -27,23 +27,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .menu-item {
+    padding: 10px 15px;
+    font-size: 18px;
     text-decoration: none;
     color: #000;
-    background-color: #fff;
-    border: 1px solid #58d5f5; /* Bubblegum blue */
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin: 0 5px;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    transition: color 0.3s;
 }
 
 .menu-item:hover {
-    border: 1px solid #666;
-    cursor: pointer;
+    color: #ff7b00;
 }
 
 .footer {
@@ -363,7 +366,6 @@ color: #fff;
 .about-section {
     margin: 0 auto;
     max-width: 800px;
-    line-height: 1.6;
     font-size: 18px;
 }
 
@@ -377,4 +379,3 @@ color: #fff;
     margin-bottom: 20px;
     text-align: justify;
 }
-

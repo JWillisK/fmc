@@ -1,5 +1,5 @@
 // Set the duration of the slide transition in milliseconds
-const slideDuration = 5000; // 5 seconds
+const slideDuration = 4000; // 4 seconds
 
 // Select all slides
 const slides = document.querySelectorAll(".slide");

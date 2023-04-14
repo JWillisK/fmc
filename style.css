@@ -240,3 +240,14 @@ border-bottom: none;
 background-color: #58d5f5; /* Bubblegum blue */
 color: #fff;
 }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px; /* Add some space below the logo */
+}

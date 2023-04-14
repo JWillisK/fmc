@@ -18,7 +18,6 @@ body {
 }
 
 .icon:hover {
-    background-color: #ffffff;
     cursor: pointer;
 }
 
@@ -139,8 +138,8 @@ body {
 }
 
 .mobile-menu-container {
-    position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin-top: -30px;

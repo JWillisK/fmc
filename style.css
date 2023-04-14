@@ -97,9 +97,17 @@ body {
 
 .front-image {
     object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
-    width: 100%; /* Adjust the width to fit the container */
-    height: 100%; /* Adjust the height to fit the container */
+    max-width: 300px; /* Adjust the max-width to fit the container */
+    max-height: 100%; /* Adjust the max-height to fit the container */
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+
 
 .image-container {
     position: relative;

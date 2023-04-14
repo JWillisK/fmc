@@ -30,7 +30,7 @@ function startSlideshow() {
 }
 
 // Start the slideshow on page load
-window.addEventListener("load", startSlideshow);
+document.addEventListener("DOMContentLoaded", startSlideshow);
 
 // Create the dropdown menu element
 const dropdownMenu = document.createElement("div");

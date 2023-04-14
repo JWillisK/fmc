@@ -57,13 +57,8 @@ menuItems.forEach((item) => {
 // Add the dropdown menu to the page
 document.body.appendChild(dropdownMenu);
 
-// Set the initial display property of the dropdown menu to 'none'
-dropdownMenu.style.display = "none";
-
-// Select the 'icon' element
-const menuIcon = document.querySelector(".icon");
-
-// Toggle the dropdown menu visibility when the 'icon' is clicked
-menuIcon.addEventListener("click", () => {
-  dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
+document.querySelector('.icon').addEventListener('click', function() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
 });
+

@@ -18,8 +18,7 @@ body {
 }
 
 .icon:hover {
-    background-color: #999;
-    border: 1px solid #666;
+    background-color: #ffffff;
     cursor: pointer;
 }
 
@@ -214,7 +213,7 @@ margin-top: 20px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -30px;
+    bottom: 10px;
     width: 100px;
     text-align: center;
 }
@@ -250,7 +249,7 @@ margin-top: 20px;
 .dropdown-menu {
 display: none;
 position: absolute;
-top: 60px; /* Adjust this value if needed */
+top: 300px; /* Adjust this value if needed */
 background-color: #fff;
 border: 1px solid #58d5f5; /* Bubblegum blue */
 border-radius: 5px;
@@ -390,4 +389,14 @@ color: #fff;
 .about-section p {
     margin-bottom: 20px;
     text-align: justify;
+}
+
+.footer:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
 }

@@ -171,6 +171,17 @@ margin-top: 20px;
 
 /* Styles for mobile screens */
 @media (max-width: 767px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cupcake-item {
+    width: 100%;
+    max-width: 400px; /* You can adjust this value to your preferred max-width */
+  }
+    
   .horizontal-menu {
     display: none;
   }

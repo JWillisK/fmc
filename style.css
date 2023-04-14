@@ -46,9 +46,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
 .footer {
     background-color: #FFF9C4; /* Updated color to yellow */
     padding: 20px;
@@ -56,7 +53,6 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 
 .footer-section {
     display: flex;
@@ -99,11 +95,8 @@ body {
     text-decoration: underline;
 }
 
-
-
-/* Add this CSS rule */
 .image-container {
-	position: relative;
+    position: relative;
     width: 100%;
     height: 500px; /* Add a fixed height */
     overflow: hidden;
@@ -115,7 +108,7 @@ body {
 .slide {
     position: absolute;
     width: 100%;
-	opacity: 0;
+    opacity: 0;
     transition: opacity 0.5s;
 }
 
@@ -124,159 +117,153 @@ body {
     height: auto;
 }
 
-
 .slide.active {
     opacity: 1;
 }
 
-
-
 .menu-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
-  max-width: 1200px; /* Add this line */
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 1200px; /* Add this line */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cupcake-item {
-  width: calc(33.33% - 20px);
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #58d5f5; /* Bubblegum blue */
-  border-radius: 5px;
-  text-align: center;
-  box-sizing: border-box; /* Add this line */
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #58d5f5; /* Bubblegum blue */
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box; /* Add this line */
 }
 
 .cupcake-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  object-fit: cover; /* Add this line */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover; /* Add this line */
 }
 
 .cupcake-item h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px
 }
 
 .cupcake-item p {
-  font-size: 16px;
-  margin-bottom: 20px;
+font-size: 16px;
+margin-bottom: 20px;
 }
 
 .cupcake-item span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #58d5f5; /* Bubblegum blue */
-  display: block;
-  margin-top: 20px;
+font-size: 20px;
+font-weight: bold;
+color: #58d5f5; /* Bubblegum blue */
+display: block;
+margin-top: 20px;
 }
 
 /* Add the media query for mobile devices */
 @media screen and (max-width: 767px) {
+.header-wrapper {
+display: flex;
+justify-content: center;
+position: relative;
+width: 100%;
+}
 
-  .title-icons-wrapper {
-      display: flex;
-      align-items: center;
-  }
+.title-icons-wrapper {
+display: flex;
+align-items: center;
+}
 
-  .title {
-      text-align: center;
-  }
+.title {
+text-align: center;
+}
 
-  .icon {
-      position: absolute;
-      right: 0;
-      padding-right: 10px;
-      cursor: pointer;
-  }
+.icon {
+position: absolute;
+right: 0;
+padding-right: 10px;
+cursor: pointer;
+}
 
 }
 
-
-
-
-
-
-
 /* Styles for mobile screens */
 @media (max-width: 767px) {
-  .horizontal-menu {
-    display: none;
-  }
+.horizontal-menu {
+display: none;
+}
 
 .header-wrapper {
-  .header-wrapper {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-  }
+display: flex;
+justify-content: center;
+position: relative;
+width: 100%;
+}
 
-  .title-icons-wrapper {
-      display: flex;
-      align-items: center;
-  }
+.title-icons-wrapper {
+display: flex;
+align-items: center;
+}
 
-  .title {
-      text-align: center;
-  }
+.title {
+text-align: center;
+}
 
-  .icon {
-      position: absolute;
-      right: 0;
-      padding-right: 10px;
-      cursor: pointer;
-  }
-
+.icon {
+position: absolute;
+right: 0;
+padding-right: 10px;
+cursor: pointer;
+}
 }
 
 /* Styles for desktop screens */
 @media (min-width: 768px) {
-  .icons {
-    display: none;
-  }
+.icons {
+display: none;
+}
 }
 
 /* Update the dropdown-menu styles */
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 60px; /* Adjust this value if needed */
-  background-color: #fff;
-  border: 1px solid #58d5f5; /* Bubblegum blue */
-  border-radius: 5px;
-  z-index: 1000;
-  width: 80%; /* Set the width to 80% of the screen */
-  max-height: 75vh; /* Set the height to 75% of the viewport height */
-  overflow-y: auto; /* Make the menu scrollable */
-  margin-left: auto;
-  margin-right: auto;
-  left: 50%;
-  transform: translateX(-50%);
+display: none;
+position: absolute;
+top: 60px; / Adjust this value if needed /
+background-color: #fff;
+border: 1px solid #58d5f5; / Bubblegum blue /
+border-radius: 5px;
+z-index: 1000;
+width: 80%; / Set the width to 80% of the screen /
+max-height: 75vh; / Set the height to 75% of the viewport height /
+overflow-y: auto; / Make the menu scrollable */
+margin-left: auto;
+margin-right: auto;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .dropdown-menu-item {
-  display: block;
-  text-align: center;
-  padding: 15px 20px; /* Increase padding for larger font size */
-  border-bottom: 1px solid #58d5f5; /* Bubblegum blue */
-  cursor: pointer;
-  font-size: 18px; /* Increase font size */
+display: block;
+text-align: center;
+padding: 15px 20px; /* Increase padding for larger font size */
+border-bottom: 1px solid #58d5f5; / Bubblegum blue /
+cursor: pointer;
+font-size: 18px; / Increase font size */
 }
 
 .dropdown-menu-item:last-child {
-  border-bottom: none;
+border-bottom: none;
 }
 
 .dropdown-menu-item:hover {
-  background-color: #58d5f5; /* Bubblegum blue */
-  color: #fff;
+background-color: #58d5f5; /* Bubblegum blue */
+color: #fff;
 }
-

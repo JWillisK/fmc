@@ -181,7 +181,7 @@ margin-top: 20px;
     width: 100%;
     max-width: 400px; /* You can adjust this value to your preferred max-width */
   }
-    
+  
   .horizontal-menu {
     display: none;
   }
@@ -221,14 +221,14 @@ margin-top: 20px;
 .dropdown-menu {
 display: none;
 position: absolute;
-top: 60px; /* Adjust this value if needed */
+top: 60px; / Adjust this value if needed /
 background-color: #fff;
-border: 1px solid #58d5f5; /* Bubblegum blue */
+border: 1px solid #58d5f5; / Bubblegum blue /
 border-radius: 5px;
 z-index: 1000;
-width: 80%; /* Set the width to 80% of the screen */
-max-height: 75vh; /* Set the height to 75% of the viewport height */
-overflow-y: auto; /* Make the menu scrollable */
+width: 80%; / Set the width to 80% of the screen /
+max-height: 75vh; / Set the height to 75% of the viewport height /
+overflow-y: auto; / Make the menu scrollable */
 margin-left: auto;
 margin-right: auto;
 left: 50%;
@@ -260,7 +260,7 @@ color: #fff;
 }
 
 .logo {
-  width: 200px;
+  width: 350px;
   height: auto;
   margin-bottom: 10px; /* Add some space below the logo */
 }

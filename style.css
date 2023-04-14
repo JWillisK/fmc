@@ -209,22 +209,34 @@ margin-top: 20px;
     position: relative;
     width: 100%;
   }
-
-  .title-icons-wrapper {
-    display: flex;
+  
+.icon-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    width: 100px;
+    text-align: center;
+}
+  
+.title-icons-wrapper {
+    display: inline-block;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     align-items: center;
-  }
+}
 
   .title {
     text-align: center;
   }
 
-  .icon {
-    position: absolute;
-    right: 0;
-    padding-right: 10px;
+.icon {
+    font-size: 24px;
     cursor: pointer;
-  }
+}
+  
 }
 
 /* Styles for desktop screens */

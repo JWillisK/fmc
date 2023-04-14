@@ -168,68 +168,41 @@ display: block;
 margin-top: 20px;
 }
 
-/* Add the media query for mobile devices */
-@media screen and (max-width: 767px) {
-.header-wrapper {
-display: flex;
-justify-content: center;
-position: relative;
-width: 100%;
-}
-
-.title-icons-wrapper {
-display: flex;
-align-items: center;
-}
-
-.title {
-text-align: center;
-}
-
-.icon {
-position: absolute;
-right: 0;
-padding-right: 10px;
-cursor: pointer;
-}
-
-}
-
 /* Styles for mobile screens */
 @media (max-width: 767px) {
-.horizontal-menu {
-display: none;
-}
+  .horizontal-menu {
+    display: none;
+  }
 
-.header-wrapper {
-display: flex;
-justify-content: center;
-position: relative;
-width: 100%;
-}
+  .header-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
 
-.title-icons-wrapper {
-display: flex;
-align-items: center;
-}
+  .title-icons-wrapper {
+    display: flex;
+    align-items: center;
+  }
 
-.title {
-text-align: center;
-}
+  .title {
+    text-align: center;
+  }
 
-.icon {
-position: absolute;
-right: 0;
-padding-right: 10px;
-cursor: pointer;
-}
+  .icon {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    cursor: pointer;
+  }
 }
 
 /* Styles for desktop screens */
 @media (min-width: 768px) {
-.icons {
-display: none;
-}
+  .icon {
+    display: none;
+  }
 }
 
 /* Update the dropdown-menu styles */

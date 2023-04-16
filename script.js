@@ -1,5 +1,5 @@
 // Set the duration of the slide transition in milliseconds
-const slideDuration = 4000; // 4 seconds
+const slideDuration = 5000; // 5 seconds
 
 // Select all slides
 const slides = document.querySelectorAll(".slide");
@@ -30,7 +30,7 @@ function startSlideshow() {
 }
 
 // Start the slideshow on page load
-document.addEventListener("DOMContentLoaded", startSlideshow);
+window.addEventListener("load", startSlideshow);
 
 // Create the dropdown menu element
 const dropdownMenu = document.createElement("div");
@@ -54,8 +54,12 @@ menuItems.forEach((item) => {
   dropdownMenu.appendChild(menuItem);
 });
 
+
 // Add the dropdown menu to the page
 document.body.appendChild(dropdownMenu);
+
+// Set the initial display property of the dropdown menu to 'none'
+dropdownMenu.style.display = "none";
 
 document.querySelector('.icon').addEventListener('click', function() {
     const dropdownMenu = document.querySelector('.dropdown-menu');

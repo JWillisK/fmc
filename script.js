@@ -66,3 +66,21 @@ document.querySelector('.icon').addEventListener('click', function() {
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
 });
 
+const appointmentSlots = document.querySelectorAll(".appointment-slot");
+
+appointmentSlots.forEach((slot) => {
+  slot.addEventListener("click", () => {
+    if (!slot.classList.contains("booked")) {
+      const day = slot.closest(".day").dataset.day;
+      const time = slot.dataset.time;
+      const booked = confirm(`Book ${day} ${time} session?`);
+
+      if (booked) {
+        slot.classList.add("booked");
+      }
+    } else {
+      alert("This slot is already booked.");
+    }
+  });
+});
+

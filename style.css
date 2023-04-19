@@ -361,17 +361,68 @@ color: #fff;
 /* Background image styles */
 .background-image {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('https://i.imgur.com/YpdFtRJ.jpg');
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    filter: brightness(60%);
+    filter: brightness(85%);
 }
+
+/* Add specific background images to each .background-image div */
+.bg-image-1 {
+    top: 0;
+    background-image: url('https://i.imgur.com/YpdFtRJ.jpg');
+}
+
+.bg-image-2 {
+  height: calc(60% - 20px); /* Adjust the '50px' value to your desired buffer size */
+    top: 50%;
+    background-image: url('https://i.imgur.com/jQ6CaA0.jpg');
+}
+
+
+/* Add styles for the text boxes */
+.text-box {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+/* Update the position of the text boxes */
+.text-box:first-of-type {
+    float: left;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.text-box:last-of-type {
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.text-box-1 {
+    left: 10%; /* Adjust percentage value to position the box */
+}
+
+.text-box-2 {
+    right: 10%; /* Adjust percentage value to position the box */
+}
+
+.text-box-3 {
+    left: 20%; /* Adjust percentage value to position the box */
+}
+
+.text-box-4 {
+    right: 20%; /* Adjust percentage value to position the box */
+}
+
 
 /* Header title and subtitle styles */
 .about-section h1 {

@@ -6,11 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFF9C4; /* Light pink */
+    background-color:  #ffe6e6;; /* Light pink */
 }
 
 .header {
-    background-color: #FFF9C4; /* Light pink */
+    background-color: #ffe6e6;; /* Light pink */
     display: flex;
     justify-content: space-between;
     align-items: center;

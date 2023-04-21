@@ -27,7 +27,7 @@ body {
   flex-basis: calc(100% / 3 - 1rem);
   padding: 1rem;
   border-radius: 10px;
-  background-color: #ffe6e6; /* Add a background color to the day container */
+  background-color: #ffe6eb2; /* Add a background color to the day container */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
 }
 

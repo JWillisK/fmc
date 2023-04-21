@@ -1,96 +1,57 @@
+<!DOCTYPE html>
 <html lang="en">
-
-  
 <head>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Contact Page</title>
 </head>
-
 <body>
-    <header>
-        <div class="header-wrapper">
-            <div class="logo-container">
-                <img class="logo" src="https://i.imgur.com/7Kz6lY5.png" alt="Cupcake Business Logo">
-            </div>
-            <div class="icon-container">
-                 <div class="mobile-menu-container">
-                    <div class="icon">≡</div>
+    <!-- Existing header code -->
+
+    <main class="contact-page">
+        <section class="contact-section">
+            <div class="background-image bg-image-1"></div>
+            <div class="contact-content">
+                <h1>Contact Us</h1>
+                <p>Thank you for your interest in our Cupcake Business. We are happy to help you with any questions or concerns you may have. Please don't hesitate to reach out to us using the contact information below or by filling out the contact form.</p>
+
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
+                    <p><strong>Phone:</strong> 123-45-6789</p>
+                    <p><strong>Email:</strong> john.smith@example.com</p>
+                    <p><strong>Address:</strong> 1234 Cupcake Lane, Joliet, IL 60435</p>
+                </div>
+
+                <div class="pickup-delivery-info">
+                    <h2>Pickup and Delivery</h2>
+                    <p>We offer local pickups and deliveries in Joliet, IL. Please contact us for more information or to schedule a pickup or delivery.</p>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="/submit-form" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
-        </div>
-
-        <div class="horizontal-menu">
-            <nav class="menu">
-                <a class="menu-item" href="index.html">HOME</a>
-                <a class="menu-item" href="about.html">ABOUT</a>
-                <a class="menu-item" href="menu.html">MENU</a>
-                <a class="menu-item" href="online-ordering.html">ORDER</a>
-                <a class="menu-item" href="workshop.html">WORKSHOP</a>
-                <a class="menu-item" href="contact.html">CONTACT</a>
-            </nav>
-        </div>
-    </header>
-
-
-         <main class="contact-page">
-        <h1>Contact Us</h1>
-        <p>Thank you for your interest in our Cupcake Business. We are happy to help you with any questions or concerns you may have. Please don't hesitate to reach out to us using the contact information below or by filling out the contact form.</p>
-
-        <div class="contact-details">
-            <h2>Contact Information</h2>
-            <p><strong>Phone:</strong> 123-45-6789</p>
-            <p><strong>Email:</strong> john.smith@example.com</p>
-            <p><strong>Address:</strong> 1234 Cupcake Lane, Joliet, IL 60435</p>
-        </div>
-
-        <div class="pickup-delivery-info">
-            <h2>Pickup and Delivery</h2>
-            <p>We offer local pickups and deliveries in Joliet, IL. Please contact us for more information or to schedule a pickup or delivery.</p>
-        </div>
-
-        <div class="contact-form">
-            <h2>Contact Form</h2>
-            <form action="/submit-form" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        </section>
     </main>
 
-    
-
-    <footer class="footer">
-    <div class="footer-content">
-        <h3 class="footer-heading">Follow Us</h3>
-        <div class="social-media-links">
-            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.snapchat.com" target="_blank" class="social-icon"><i class="fab fa-snapchat-ghost"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-    <div class="footer-section">
-        <p>©2023 Chadchowa Designs.  All Rights Reserved.</p>
-    </div>
-</footer>
+    <!-- Existing footer code -->
+    <script src="script.js"></script>
 </body>
-
-    
-<script src="script.js"></script>
- 
 </html>

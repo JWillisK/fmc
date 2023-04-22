@@ -1,0 +1,67 @@
+/* Add these styles to your existing style.css file */
+
+.contact-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-form-container,
+.contact-info-container {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.contact-form-container {
+  max-width: 40%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-form button {
+  background-color: #ee6c4d;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #db5a3c;
+}
+
+.contact-info-container {
+  text-align: left;
+}
+
+.contact-info-container p {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form-container,
+  .contact-info-container {
+    width: 100%;
+  }
+}
